@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pic1"
+    android:id="@+id/l1"
+    tools:context="com.tejasvi.whatsappintentproject.MainActivity">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:text="MAD PROJECT"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:background="#D19999"/>
+</androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share on other apps" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:ccp_defaultNameCode="Ind" />
+
+        <EditText
+            android:id="@+id/etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20sp"
+            android:hint="Enter Mobile Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:hint="Enter Message"
+            android:inputType="textMultiLine" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/btnload"
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:text="load Image" ></Button>
+
+            <Button
+                android:id="@+id/btn_select"
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="select Image"></Button>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:padding="5dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#7FB0A9"
+        android:text="send message on whatsapp"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
